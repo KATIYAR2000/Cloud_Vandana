@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .profile-card {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .profile-card h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 20px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #0077b5;
+        }
+
+        /* Responsive design */
+        @media (max-width: 500px) {
+            .profile-card {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        <h2>John Doe</h2>
+        <p>Web Developer</p>
+        <p>A passionate web developer who loves to create amazing user experiences.</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourusername" target="_blank">&#xf09a;</a> <!-- Facebook -->
+            <a href="https://twitter.com/yourusername" target="_blank">&#xf099;</a> <!-- Twitter -->
+            <a href="https://www.instagram.com/yourusername" target="_blank">&#xf08c;</a> <!-- Instagram -->
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">&#xf16d;</a> <!-- LinkedIn -->
+        </div>
+    </div>
+
+</body>
+</html>
